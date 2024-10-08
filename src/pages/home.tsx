@@ -1,7 +1,6 @@
 import logo from "../assets/black white Thunder logo.png";
 import { LuSearch } from "react-icons/lu";
 import React from "react";
-// import bg from "../assets/pexels-artunchained-325229.jpg"
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import banner from "../assets/Green and Orange Illustrative Business Services Instagram Post.png"
@@ -30,7 +29,6 @@ export const HomePage = () => {
 
                     <div className="flex gap-2 items-center">
                         <img className="w-20 h-20 -mt-8" alt="company" src={logo} />
-                        {/* <h1>BLORE</h1> */}
                     </div>
                     <div className="flex gap-5 font-georgia -mr-20 text-md">
                         <h2 className="">
