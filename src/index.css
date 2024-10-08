@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('./assets/fonts/georgia-2/georgia.ttf') format('truetype'),
+            url('./assets/fonts/georgia-2/georgiab.ttf') format('truetype');
+    font-weight: normal; /* Regular weight */
+    font-style: normal;  /* Normal style */
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('./assets/fonts/georgia-2/georgiai.ttf') format('truetype');
+    font-weight: bold; /* Bold weight */
+    font-style: normal; /* Normal style */
+}
+
+
+@keyframes changeToGradient {
+    0% {
+        color: black; /* Start with black */
+    }
+    100% {
+        background: linear-gradient(to right, #6B7280, #000000); /* Change to gray-500 and black */
+        -webkit-background-clip: text; /* For Chrome/Safari */
+        color: transparent; /* Make text color transparent */
+    }
+}
+
+.change-gradient {
+    animation: changeToGradient 2s ease forwards; /* Adjust duration as needed */
+}
+
+
+
+@keyframes moveBall {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100px, 50px);
+    }
+    50% {
+        transform: translate(200px, 100px);
+    }
+    75% {
+        transform: translate(100px, 150px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%; /* Make it a circle */
+    width: 50px; /* Size of the ball */
+    height: 50px;
+}
+
+.ball:nth-child(1) {
+    background-color: black;
+    animation: moveBall 3s ease-in-out infinite; /* Infinite animation */
+}
+
+.ball:nth-child(2) {
+    background-color: gray;
+    animation: moveBall 3s ease-in-out infinite; /* Infinite animation */
+    animation-delay: 1s; /* Start after 1 second */
+}
+
+.ball:nth-child(3) {
+    background-color: black;
+    animation: moveBall 3s ease-in-out infinite; /* Infinite animation */
+    animation-delay: 2s; /* Start after 2 seconds */
+}
+
+.ball:nth-child(4) {
+    background-color: gray;
+    animation: moveBall 3s ease-in-out infinite; /* Infinite animation */
+    animation-delay: 3s; /* Start after 3 seconds */
+}
