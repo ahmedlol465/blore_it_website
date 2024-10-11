@@ -2,10 +2,20 @@ import React, { useEffect, useState } from "react"
 import { LuSearch } from "react-icons/lu"
 import { Link } from "react-router-dom"
 import logo from "../assets/black white Thunder logo.png";
+import { GrMenu } from "react-icons/gr";
 
 
 
 export const Nav = () => {
+
+
+
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen)
+    }
+
 
     const [isLogoVisible, setIsLogoVisible] = useState(true);
 
@@ -38,9 +48,26 @@ export const Nav = () => {
   alt="company"
   src={logo}
 />
+        </div>
+        </div>
 
+        <div className={` relative md:hidden pl-10 ${isLogoVisible ? "" : "hidden md:block"} `}>
+          <GrMenu
+            size={30}
+            onClick={toggleDropdown}
+            className={`text-black ${isLogoVisible ? "" : "text-white"}`}
+          />
+
+<div className={`pt-2  absolute md:flex md:items-center md:gap-5 ${isOpen ? "block" : "hidden"} `}>
+            <Link to="/" className="w-[80px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Home</Link>
+            <Link to="/services" className="w-[80px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Services</Link>
+            <Link to="/about" className="w-[80px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">About Us</Link>
+            <Link to="/contacts" className="w-[120px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100 ">Contact Us</Link>
+          </div>
         </div>
-        </div>
+
+
+
         <div className={`transition-opacity transition-transform duration-300 ${isLogoVisible ? 'opacity-100 translate-Y-0' : 'opacity-50 -translate-y-32'}`}>
         <div className="hidden md:flex gap-5 font-georgia text-sm md:text-md">
             {/* Navigation Items */}
@@ -54,6 +81,7 @@ export const Nav = () => {
         </div>
         </div>
         
+
         <div className={`transition-opacity transition-transform duration-300 ${isLogoVisible ? 'opacity-100 translate-x-0' : ` -translate-x-[20px]`}`}>
         <div className="flex items-center gap-2">
             <LuSearch   size={25} className={`m-2 ${isLogoVisible ? "" : "text-white"}`} />
@@ -62,6 +90,7 @@ export const Nav = () => {
         </div>
     </div>
     </div>
+
 
     )
 }
