@@ -58,7 +58,7 @@ export const Nav = () => {
             className={`text-black ${isLogoVisible ? "" : "text-white"}`}
           />
 
-<div className={`pt-2  absolute md:flex md:items-center md:gap-5 ${isOpen ? "block" : "hidden"} `}>
+<div className={`pt-2  absolute md:flex md:items-center md:gap-5 z-10 bg-white ${isOpen ? "block" : "hidden"} `}>
             <Link to="/" className="w-[80px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Home</Link>
             <Link to="/services" className="w-[80px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Services</Link>
             <Link to="/about" className="w-[80px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">About Us</Link>
