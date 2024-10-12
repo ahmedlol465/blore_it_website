@@ -1,5 +1,6 @@
 import './App.css'
 import About from './pages/About'
+import { CallYou } from './pages/CallYou'
 import { Contact } from './pages/Contact'
 import { Footer } from './pages/Footer'
 import { Nav } from './pages/Nav'
@@ -49,8 +50,16 @@ function App() {
             <Footer/>
             </>
           } />
+
+
+          <Route path="/Call" element={
+            <>
+            <Nav />
+            <CallYou />
+            <Footer/>
+            </>
+          } />
         
-          {/* Add more routes as needed */}
         </Routes>
       </BrowserRouter>
 

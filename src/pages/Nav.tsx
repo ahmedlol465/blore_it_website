@@ -22,6 +22,7 @@ export const Nav = () => {
     const handleScroll = () => {
         if (window.scrollY > 100) {
             setIsLogoVisible(false); // Hide logo after scrolling down
+            setIsOpen(false)
         } else {
             setIsLogoVisible(true); // Show logo when at the top
         }
@@ -39,7 +40,7 @@ export const Nav = () => {
 
     return (
         
-        <div className={`sticky top-0 z-20  transition-all duration-300 ${isLogoVisible ? "" : "flex items-center justify-center top-1"}`}>
+        <div className={`sticky top-0 z-20  transition-all ease-in-out duration-300 ${isLogoVisible ? "" : "flex items-center justify-center top-1"}`}>
         <div className={`flex justify-between items-center p-8  ${isLogoVisible ? "bg-transparent" : "bg-slate-800 rounded-full items-center h-20   "}`}>
         <div className="flex gap-2 items-center">
         <div className={`transition-all duration-600 ease-in-out ${isLogoVisible ? 'opacity-100 translate-x-0' : ` translate-x-[80px] `}`}>
@@ -59,11 +60,12 @@ export const Nav = () => {
             className={`text-black ${isLogoVisible ? "" : "text-white"}`}
           />
 
-<div className={`pt-2  absolute md:flex md:items-center md:gap-5 z-10 bg-white ${isOpen ? "block" : "hidden"} `}>
-            <Link to="/" onClick={toggleDropdown} className="w-[80px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Home</Link>
-            <Link to="/services" onClick={toggleDropdown} className="w-[80px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Services</Link>
-            <Link to="/about" onClick={toggleDropdown} className="w-[120px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">About Us</Link>
-            <Link to="/contacts" onClick={toggleDropdown} className="w-[120px] block text-gray-600 hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100 ">Contact Us</Link>
+<div className={ `w-52 pl-16 mt-5 pb-3 bg-slate-700 transition-all ease-in-out  rounded-xl  pt-2  absolute md:flex md:items-center md:gap-5 z-10 bg-white animate-fadeInUp ${isOpen  ? "block" : " hidden"} `}>
+            <Link to="/" onClick={toggleDropdown} className="w-[80px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Home</Link>
+            <Link to="/services" onClick={toggleDropdown} className="w-[80px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Services</Link>
+            <Link to="/about" onClick={toggleDropdown} className="w-[120px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">About Us</Link>
+            <Link to="/contacts" onClick={toggleDropdown} className="w-[120px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100 ">Contact Us</Link>
+            <Link to="/Call" onClick={toggleDropdown} className="w-[120px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100 ">Call You</Link>
           </div>
         </div>
 
@@ -79,6 +81,7 @@ export const Nav = () => {
             <Link to="/about" className="transition-transform transform hover:scale-105 cursor-pointer"><a>About Us</a></Link>
             {/* <h2 className="transition-transform transform hover:scale-105 cursor-pointer">Our Clients</h2> */}
             <Link to="/contacts" className="transition-transform transform hover:scale-105 cursor-pointer"><a >Contact Us</a></Link>
+            <Link to="/Call" className="transition-transform transform hover:scale-105 cursor-pointer"><a >Call you</a></Link>
         </div>
         </div>
         

@@ -18,7 +18,7 @@ export const Footer = () => {
                 <i className="fas fa-map-marker-alt text-orange-500 text-3xl"></i>
                 <div className="ml-4">
                   <h4 className="text-xl font-semibold">Find us</h4>
-                  <span className="text-gray-400">1010 Avenue, sw 54321, Chandigarh</span>
+                  <span className="text-gray-400">24 duki, cairo</span>
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@ export const Footer = () => {
                 <i className="fas fa-phone text-orange-500 text-3xl"></i>
                 <div className="ml-4">
                   <h4 className="text-xl font-semibold">Call us</h4>
-                  <span className="text-gray-400">9876543210 0</span>
+                  <span className="text-gray-400">01124243236</span>
                 </div>
               </div>
             </div>
@@ -36,18 +36,19 @@ export const Footer = () => {
                 <i className="far fa-envelope-open text-orange-500 text-3xl"></i>
                 <div className="ml-4">
                   <h4 className="text-xl font-semibold">Mail us</h4>
-                  <span className="text-gray-400">mail@info.com</span>
+                  <span className="text-gray-400">it@gmail.com</span>
                 </div>
               </div>
             </div>
           </div>
   
           <div className="flex flex-wrap justify-between py-10">
-            <div className="w-full md:w-1/3 mb-8">
+            <div className="w-full md:w-1/3 mb-8 pl-5">
               <div className="mb-6">
-                <img src={logo} alt="logo" className="w-40" />
+                {/* <img src={logo} alt="logo" className="w-40" /> */}
+                <h1 className="font-serif text-5xl pt-5 text-gray-600 bg-gradient-to-r from-slate-800 to-white text-transparent bg-clip-text font-bold uppercase tracking-widest animate__animated  animate__backInLeft  animate-fadeInUp">BLORE</h1>
               </div>
-              <p className="text-gray-400">
+              <p className="text-gray-400 w-52">
                 Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut.
               </p>
               <div className="flex space-x-4 mt-6">

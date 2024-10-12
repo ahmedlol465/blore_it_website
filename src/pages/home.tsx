@@ -1,6 +1,8 @@
 import React from "react";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import serviese1 from "../assets/shutterstock_316262528-1-1536x929.jpg"
+import serviece2 from '../assets/pexels-luis-gomes-166706-546819.jpg'
+import services3 from '../assets/pexels-tara-winstead-8386440.jpg'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -63,26 +65,26 @@ export const HomePage = () => {
     slidesPerView={1}
     pagination={{ clickable: true }}
     navigation
-    className="swiper-container"
+    className="swiper-container mb-10"
 >
     
   <SwiperSlide>
-        <div className="service-slide pb-10 flex flex-col justify-center items-center text-center">
-            <img className="w-[450px] h-[400px] pb-5 rounded-xl " src={serviese1} alt="service" />
+        <div className="service-slide pt-8 pb-10 flex flex-col justify-center items-center text-center">
+            <img className="w-[400px] h-[350px] pb-5 rounded-3xl " src={serviese1} alt="service" />
             <h1 className="text-xl">Network Configuration</h1>
             <p className="w-[400px] t-5">We handle the complete installation and configuration of your network infrastructure.</p>
         </div>
     </SwiperSlide>
     <SwiperSlide>
-        <div className="service-slide pb-10 flex flex-col justify-center items-center">
-            <img className="w-[450px] h-[400px] pb-5 rounded-xl" src={serviese1} alt="service" />
+        <div className="service-slide pt-8 pb-10 flex flex-col justify-center items-center text-center">
+            <img className="w-[400px] h-[350px] pb-5 rounded-3xl" src={serviece2} alt="service" />
             <h1 className="text-xl">Data Center Construction</h1>
             <p className="w-[400px] t-5">We specialize in designing and constructing cutting-edge data centers optimized for performance and security.</p>
         </div>
     </SwiperSlide>
     <SwiperSlide>
-        <div className="service-slide pb-10 flex flex-col justify-center items-center">
-            <img className="w-[450px] h-[400px] pb-5 rounded-xl" src={serviese1} alt="service" />
+        <div className="service-slide pt-8 pb-10 flex flex-col justify-center items-center text-center">
+            <img className="w-[400px] h-[350px] pb-5 rounded-3xl" src={services3} alt="service" />
             <h1 className="text-xl">Network Security</h1>
             <p className="w-[400px] t-5">Our team implements robust security measures to protect your network infrastructure from potential threats.</p>
         </div>
