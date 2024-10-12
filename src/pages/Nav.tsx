@@ -60,12 +60,12 @@ export const Nav = () => {
             className={`text-black ${isLogoVisible ? "" : "text-white"}`}
           />
 
-<div className={ `w-52 pl-16 mt-5 pb-3 bg-slate-700 transition-all ease-in-out  rounded-xl  pt-2  absolute md:flex md:items-center md:gap-5 z-10 bg-white animate-fadeInUp ${isOpen  ? "block" : " hidden"} `}>
-            <Link to="/" onClick={toggleDropdown} className="w-[80px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Home</Link>
-            <Link to="/services" onClick={toggleDropdown} className="w-[80px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Services</Link>
-            <Link to="/about" onClick={toggleDropdown} className="w-[120px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">About Us</Link>
-            <Link to="/contacts" onClick={toggleDropdown} className="w-[120px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100 ">Contact Us</Link>
-            <Link to="/Call" onClick={toggleDropdown} className="w-[120px] block text-[#FFFFFF] hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100 ">Call You</Link>
+<div className={ `w-52 pl-16 mt-5 pb-3 bg-slate-700 transition-all ease-in-out  rounded-xl  pt-2  absolute md:flex md:items-center md:gap-5 z-10  animate-fadeInUp ${isOpen  ? "block" : " hidden"} `}>
+            <Link to="/" onClick={toggleDropdown} className="w-[80px] block text-white hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Home</Link>
+            <Link to="/services" onClick={toggleDropdown} className="w-[80px] block text-white hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">Services</Link>
+            <Link to="/about" onClick={toggleDropdown} className="w-[120px] block text-white hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100">About Us</Link>
+            <Link to="/contacts" onClick={toggleDropdown} className="w-[120px] block text-white hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100 ">Contact Us</Link>
+            <Link to="/Call" onClick={toggleDropdown} className="w-[120px] block text-white hover:text-gray-800 transition-colors transition-transform transform hover:scale-105 cursor-pointer text-gray-600 hover:text-gray-900 transition-colors px-2 py-1 rounded-md hover:bg-gray-100 ">Call You</Link>
           </div>
         </div>
 
