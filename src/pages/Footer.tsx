@@ -98,7 +98,7 @@ export const Footer = () => {
   
         <div className="bg-gray-800 py-4">
           <div className="container mx-auto flex justify-between text-gray-400">
-            <p className="text-sm">&copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/" className="text-orange-500">Anup</a></p>
+            <p className="text-sm">&copy; 2024, All Right Reserved <a href="https://codepen.io/anupkumar92/" className="text-orange-500">Anup</a></p>
             <ul className="flex space-x-4">
               <li><a href="#" className="hover:text-orange-500">Home</a></li>
               <li><a href="#" className="hover:text-orange-500">Terms</a></li>

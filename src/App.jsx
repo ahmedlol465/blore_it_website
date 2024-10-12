@@ -1,4 +1,5 @@
 import './App.css'
+import ContactForm from './conponents/SendEmailForm'
 import About from './pages/About'
 import { CallYou } from './pages/CallYou'
 import { Contact } from './pages/Contact'
@@ -39,6 +40,7 @@ function App() {
             <>
             <Nav />
             <Contact />
+            <ContactForm/>
             <Footer/>
             </>
           } />
